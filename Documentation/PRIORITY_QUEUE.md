@@ -167,6 +167,13 @@ Example of using above functions:
             printf("Could not fetch top element from pq\n");
         }
 
+        /* 
+         * Function to traverse every node and do stuff with them
+         * but be aware not to modify the priority or if you modify the
+         * priority be sure the mapping is injective
+         * Check the doxygen documentation for the function for more information
+         */
+        pri_queue_traverse(pq, &print_data);
         free_priority_queue(pq);
 
         fclose(fin);
