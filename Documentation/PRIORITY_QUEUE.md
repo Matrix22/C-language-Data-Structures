@@ -41,7 +41,7 @@ Example of creating and deleting a priority queue:
         priority_queue_t* pq = create_priority_queue(
             20, &compare_int, &compare_int, NULL, NULL);
 
-        // pq = [];
+        // pq = [NULL, NULL, ... (20 times) .., NULL];
 
         /* Using heapify method */
 
